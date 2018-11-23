@@ -1,0 +1,44 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": []
+    },
+    "utter_role": {
+      "slots": []
+    },
+    "utter_personality": {
+      "slots": []
+    },
+    "utter_name": {
+      "slots": []
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "utter_location": {
+      "slots": []
+    },
+    "utter_appearance": {
+      "slots": []
+    },
+    "utter_lie": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.12.0",
+  "python": "3.6.6",
+  "max_histories": [
+    5,
+    null,
+    5,
+    2
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.form_policy.FormPolicy"
+  ],
+  "trained_at": "20181120-194615"
+}

@@ -1,0 +1,136 @@
+intents:
+- ask_name
+- ask_name_veeq
+- ask_location_veeq
+- ask_appearance_veeq
+- ask_motive
+- ask_motive_akemaz
+- ask_motive_veeq
+- ask_role
+- ask_role_veeq
+- ask_role_akemaz
+- ask_personality_akemaz
+- ask_personality_veeq
+- insult
+- compliment
+- ask_backstory
+- ask_info
+- ask_info_location
+
+
+actions:
+- utter_name
+- utter_name_veeq
+- utter_location_veeq
+- utter_appearance_veeq
+- utter_motive
+- utter_motive_akemaz
+- utter_motive_veeq
+- utter_role
+- utter_role_veeq
+- utter_role_akemaz
+- utter_personality_akemaz
+- utter_personality_veeq
+- utter_insult
+- utter_compliment
+- utter_backstory
+- utter_info
+- utter_info_location
+- utter_ask_who
+
+templates:
+ utter_name:
+  - text: "My name is Rinnol"
+  - text: "Rinnol"
+  - text: "It's Rinnol"
+
+utter_name_veeq:
+- text: "His name is Veeq"
+- text: "Veeq"
+- text: "I think his name is Veeq"
+
+utter_location_veeq:
+- text: "I don't know where he is"
+- text: "I dunno"
+- text: "I have no idea"
+- text: "I really don't know"
+
+utter_appearance_veeq:
+- text: "He looks like an Airkru, but with mechanical parts"
+- text: "He's half Airkru and half cyborg"
+- text: "He has a robot arm and leg. For the rest he looks like a normal Airkru"
+- text: "He's an Airkru with a robot right arm and right leg"
+
+utter_motive:
+- text: "I need the money. I... Please, it's not what you think. I don't care about being rich or powerful, not anymore. I just want to get away from it all"
+- text: "I never meant to hurt anyone. I just want the money so that I can start somewhere new"
+- text: "I don't care about the politics, about Raih, or even about Akemaz or Veeq. I want to start a new life somewhere with the one I love, and I need money for that"
+
+utter_motive_akemaz:
+- text: "Akemaz? I barely know him. Don't know exactly why he's doing this, and honestly, I don't really care"
+- text: "He's probably doing it for the thrill of it. And for the money, of course. I don't really know him that well"
+- text: "I don't what his motive is. Whatever it might be, I'm sure it's nothing good. But that's his business, not mine, I only care about my own."
+
+utter_motive_veeq:
+- text: "I don't know. I don't know the guy"
+- text: "I've never even spoken to him, how am I supposed to know?"
+- text: "Don't know, don't care."
+
+utter_role:
+- text: "I just did what Akemaz told me to do"
+- text: "Akemaz told me to hack into the station's systems to retrieve some data. I didn't ask any questions"
+- text: "I stole some secret info, nothing more, nothing less"
+- text: "I only hacked into the "
+
+utter_role_veeq:
+- text: "He is the one who smuggled us in"
+- text: "He smuggled us in"
+- text: "Veeq got us in to the station unnoticed, for the most part"
+
+utter_role_akemaz:
+- text: "Akemaz planned everything. You should be asking him the questions, not me"
+- text: "Akemaz sees himself as our leader, which is accurate I guess."
+- text: "Akemaz is the mastermind behind the whole plan. He's the one you want."
+
+utter_personality_akemaz:
+- text: "I don't know him that well, so I'm not sure. All I know is that you better not trust him. You never know what he might be up to."
+- text: "Akemaz is... not trustworthy. That's all I know."
+
+utter_personality_veeq:
+- text: "Look, I've only seen him once or twice. We've never even exchanged words. I don't know the guy"
+- text: "Absolutely no idea. He didn't talk much."
+
+utter_insult:
+- text: "What did you just say to me?"
+- text: "Excuse me?"
+- text: "Well fuck you too"
+- text: "You should stop talking"
+- text: "Leave me the fuck alone"
+
+utter_compliment:
+- text: "Thank you"
+- text: "Oh, uh, thanks"
+- text: "Hmmm"
+- text: "Haha, thank you"
+
+utter_backstory:
+- text: "I come from nowhere. What does it matter anyway?"
+
+utter_info:
+- text: "I don't know what the info is about. I didn't ask. The less I know, the better"
+- text: "I don't know what I stole. I don't care. I don't care about any of this"
+- text: "I never asked Akemaz what the info was. My task was to get it, not ask questions. If you want to know what it is, ask Akemaz"
+
+utter_info_location:
+- text: "I gave the data stick containing the info to Akemaz"
+- text: "I don't know. I gave it to Akemaz. I'm guessing he hid it somewhere"
+- text: "I don't have it, nor do I know where it is. Ask Akemaz"
+
+utter_ask_who:
+- text: "Who?"
+- text: "Who are you talking about?"
+- text: "Who now?"
+
+slots:
+    name:
+        type: text

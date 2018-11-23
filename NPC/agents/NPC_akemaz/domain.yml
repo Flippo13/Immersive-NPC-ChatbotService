@@ -1,0 +1,86 @@
+intents:
+  - greet
+  - goodbye
+  - thankyou
+  - accused
+  - ask_location
+  - ask_name
+  - ask_appearance
+  - ask_role
+  - ask_personality
+  - inform
+  - accuse
+  - affirm
+  - negative
+
+actions:
+  - utter_neutral_greet
+  - utter_happy_greet
+  - utter_unhappy_greet
+  - utter_angry_greet
+  - utter_goodbye
+  - utter_name
+  - utter_location
+  - utter_appearance
+  - utter_role
+  - utter_personality
+  - utter_truth
+  - utter_lie
+  - utter_ask_name
+
+
+templates:
+  utter_neutral_greet:
+  - text: "Hey, How are you?"
+  - text: "Hey, How are you doing?"
+  - text: "Everything alright?"
+  
+  utter_angry_greet:
+  - text: "What do you want? I have no time for small talk"
+  - text: "What?"
+  - text: "Hm?"
+  - text: "I am busy"
+  
+  utter_happy_greet:
+  - text: "Hey! good to see you, how are you doing today?"
+  - text: "Hey! How is you day going?"
+  
+  utter_unhappy_greet:
+  - text: "Hey"
+  - text: "Oh, its you"
+  - text: "Now, what?"
+  - text: "Keep it short please" 
+  
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Later"
+  
+  utter_name:
+  - text: "ah, Veeq. yea I might have heard of him"
+
+  utter_location:
+  - text: "If he listend to me he should be hiding in the mens toilet"
+  - text: "I dont know, he must he hiding somewhere."
+  
+  utter_role:
+  - text: "He is the brain really, this was his big plan. I am just a victim that got caught up in it!"
+
+  utter_personality:
+  - text: "He is just a sad confused man. Does not have much going for him. Suffers from PTST and all that."
+
+  utter_appearance:
+  - text: "Big bulky, ugly cyborg, want to know more?"
+
+  utter_lie:
+  - text: "I am just a victim! I did not do anything Veeq threatend me to do his bidding!"
+
+  utter_truth:
+  - text: "Alright, alright. Veeq is the one you want"
+
+  utter_ask_name:
+  - text: "Who do you mean"
+   
+
+  slots:
+    name:
+        type: text

@@ -1,0 +1,2 @@
+FROM rasa/rasa_nlu:latest-bare
+RUN pip install rasa_nlu[tensorflow]

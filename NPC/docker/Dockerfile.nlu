@@ -1,0 +1,5 @@
+FROM chatbot/tensorflow:latest
+WORKDIR /app
+COPY Chatbot ./
+RUN python build.py
+RUN python -m rasa_nlu.train -c config_nlu.yml -d data/data.md
