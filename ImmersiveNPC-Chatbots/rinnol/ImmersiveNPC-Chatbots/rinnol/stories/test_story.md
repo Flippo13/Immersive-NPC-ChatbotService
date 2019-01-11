@@ -1,0 +1,114 @@
+## happy path 1
+* greet
+ - utter_greet
+* ask_info
+ - utter_info
+* ask_mole
+ - utter_request_reward
+ - action_angryanimation
+* force_help
+ - utter_comply
+ - action_suprisedanimation
+* ask_mole
+ - utter_name_veeq
+* ask_appearance_veeq
+ - utter_appearance_veeq
+* ask_role_veeq
+ - utter_role_veeq
+* goodbye
+ - utter_goodbye
+
+## happy path 2
+* greet
+ - utter_greet
+* ask_info
+ - utter_info
+* ask_mole
+ - utter_request_reward
+ - action_angryanimation
+* ask_check_reward
+ - utter_positive
+ - action_happyanimation
+* comply_to_request
+ - utter_thank_you
+ - action_happyanimation
+* ask_mole
+ - utter_name_veeq
+* ask_appearance_veeq
+ - utter_appearance_veeq
+* ask_role_veeq
+ - utter_role_veeq
+* goodbye
+ - utter_goodbye
+
+## happy path 3
+* greet
+ - utter_greet
+* ask_info
+ - utter_info
+ - action_angryanimation
+* ask_mole
+ - utter_request_reward
+ - action_angryanimation
+* force_help+ask_mole
+ - utter_name_veeq
+ - action_suprisedanimation
+* ask_appearance_veeq
+ - utter_appearance_veeq
+* ask_role_veeq
+ - utter_role_veeq
+* goodbye
+ - utter_goodbye
+ 
+## Generated Story -6084739675678672201
+* greet
+    - utter_greet
+* ask_info
+    - utter_info
+    - action_angryanimation
+* ask_mole
+    - utter_request_reward
+    - action_angryanimation
+* force_help
+    - utter_comply
+    - action_suprisedanimation
+* ask_mole
+    - utter_name_veeq
+* ask_appearance_veeq
+    - utter_appearance_veeq
+* ask_role_veeq
+    - utter_role_veeq
+* goodbye
+    - utter_goodbye
+
+## Generated Story 6547100932496112776
+* greet
+    - utter_greet
+* ask_mood
+    - utter_mood
+    - action_angryanimation
+* ask_motive
+    - utter_motive
+    - action_angryanimation
+* ask_info_location
+    - utter_info_location
+    - action_angryanimation
+* ask_mole
+    - utter_request_reward
+    - action_angryanimation
+* ask_reward
+    - utter_state_rewards
+* ask_help
+    - utter_positive
+* comply_to_request
+    - utter_thank_you
+    - action_happyanimation
+* ask_mole
+    - utter_name_veeq
+* ask_role
+    - utter_role_veeq
+* ask_appearance_veeq
+    - utter_alienrace_veeq
+* goodbye
+    - utter_goodbye
+
