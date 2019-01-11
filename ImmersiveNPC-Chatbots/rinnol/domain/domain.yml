@@ -1,0 +1,198 @@
+
+
+intents:
+ - greet
+ - positive
+ - negative
+ - ask_name
+ - ask_name_veeq
+ - ask_location_veeq
+ - ask_appearance_veeq
+ - ask_motive
+ - ask_motive_akemaz
+ - ask_motive_veeq
+ - ask_role
+ - ask_role_veeq
+ - ask_role_akemaz
+ - ask_personality_akemaz
+ - ask_personality_veeq
+ - insult
+ - compliment
+ - ask_backstory
+ - ask_info
+ - ask_info_location
+ - ask_mole
+ - ask_mood
+ - ask_reward
+ - ask_help
+ - confirm_help
+ - promise_freedom
+ - promise_money
+ - ask_check_reward
+ - comply_to_request
+ - force_help
+ - force_help+ask_mole
+ - promise_money+promise_freedom
+ - check_reward:
+    use_entities: false
+ - goodbye
+
+entities:
+ - name
+ - reward
+ - freedom
+
+slots:
+ name:
+   type: text
+ reward:
+   type: unfeaturized
+   auto_fill: false 
+ freedom:
+   type: unfeaturized
+   auto_fill: false
+ requested_slot:
+   type: unfeaturized
+
+templates:
+ utter_alienrace_veeq:
+ - "Veeq is an Airkru"
+
+ utter_appearance_veeq:
+ - "He looks like an Airkru, but with mechanical parts"
+ - "He's half Airkru and half cyborg"
+ - "He has a robot arm and leg. For the rest he looks like a normal Airkru"
+ - "He's an Airkru with a robot right arm and right leg"
+ utter_ask_who:
+ - "Who are you talking about? "
+ utter_backstory:
+ - "I come from nowhere. What does it matter anyway?"
+ utter_compliment:
+ - "oh, thanks"
+ - "Thank you, I guess?"
+ - "Thanks"
+ utter_comply:
+ - "Alright, I will answer your questions. Calm down"
+ utter_default:
+ - "I am sorry, I dont know what that means. Got any other questions?"
+ utter_goodbye:
+ - "Bye"
+ - "Goodbye"
+
+ utter_greet:
+ - "Hey"
+ - "Hello"
+ - "Hi"
+
+ utter_info:
+ - "I don't know what the info is about. I didn't ask. The less I know, the better"
+ - "I don't know what I stole. I don't care. I don't care about any of this"
+ - "I never asked Akemaz what the info was. My task was to get it, not ask questions. If you want to know what it is, ask Akemaz"
+ utter_info_location:
+ - "I gave the data stick containing the info to Akemaz"
+ - "I don't know. I gave it to Akemaz. I'm guessing he hid it somewhere"
+ - "I don't have it, nor do I know where it is. Ask Akemaz"
+ utter_insult:
+ - "Fuck you!"
+ - "Asshole"
+ utter_location_veeq:
+ - "I don't know where he is"
+ - "I dunno"
+ - "I have no idea"
+ - "I really don't know"
+
+ utter_mood:
+ - "shit"
+
+ utter_motive:
+ - "I need the money. I... Please, it's not what you think. I don't care about being rich or powerful, not anymore. I just want to get away from it all"
+ - "I never meant to hurt anyone. I just want the money so that I can start somewhere new"
+ - "I don't care about the politics, about Raih, or even about Akemaz or Veeq. I want to start a new life somewhere with the one I love, and I need money for that"
+ utter_motive_akemaz:
+ - "Akemaz? I barely know him. Don't know exactly why he's doing this, and honestly, I don't really care"
+ - "He's probably doing it for the thrill of it. And for the money, of course. I don't really know him that well"
+ - "I don't what his motive is. Whatever it might be, I'm sure it's nothing good. But that's his business, not mine, I only care about my own."
+ utter_motive_veeq:
+ - "I don't know. I don't know the guy"
+ - "I've never even spoken to him, how am I supposed to know?"
+ - "Don't know, don't care."
+ utter_name:
+ - "Rinnol"
+ - "My name is Rinnol"
+ - "Its Rinnol"
+ utter_name_veeq:
+ - "His name is Veeq, I think"
+ - "Pretty sure that Veeq is his name"
+ - "I thought it was Veeq, could be wrong though"
+ utter_negative:
+ - "No"
+ - "That is wrong"
+ - "Not true"
+ utter_personality_akemaz:
+ - "I don't know him that well, so I'm not sure. All I know is that you better not trust him. You never know what he might be up to."
+ - "Akemaz is... not trustworthy. That's all I know."
+ utter_personality_veeq:
+ - "Look, I've only seen him once or twice. We've never even exchanged words. I don't know the guy"
+ - "Absolutely no idea. He didn't talk much."
+ utter_positive:
+ - "Yes"
+ - "That is correct"
+ - "Sure"
+ utter_request_reward:
+ - "You gotta give me something, I cant help you unless you help me, if the information is so important, there has to be an reward for me if I help you to get it back."
+ - "Look, I am stuck here. But it seems to me that they really want the information back quick. If you pull some strings to help me, I might be able to help you"
+
+ utter_role:
+ - "Akemaz told me to hack into the station's systems to retrieve some data. I didn't ask any questions"
+ - "I stole some secret info, nothing more, nothing less"
+ utter_role_akemaz:
+ - "Akemaz planned everything. You should be asking him the questions, not me"
+ - "Akemaz sees himself as our leader, which is accurate I guess."
+ - "Akemaz is the mastermind behind the whole plan. He's the one you want."
+ utter_role_veeq:
+ - "Veeq got us in to the station unnoticed, for the most part."
+ utter_state_rewards:
+ - "I need you to promise me that you can get me out if I help you"
+ utter_thank_you:
+ - "Thank you, ask me your questions"
+
+actions:
+  - utter_alienrace_veeq
+  - utter_appearance_veeq
+  - utter_ask_who
+  - utter_backstory
+  - utter_compliment
+  - utter_comply
+  - utter_default
+  - utter_goodbye
+  - utter_greet
+  - utter_info
+  - utter_info_location
+  - utter_insult
+  - utter_location_veeq
+  - utter_mood
+  - utter_motive
+  - utter_motive_akemaz
+  - utter_motive_veeq
+  - utter_name
+  - utter_name_veeq
+  - utter_negative
+  - utter_personality_akemaz
+  - utter_personality_veeq
+  - utter_positive
+  - utter_request_reward
+  - utter_role
+  - utter_role_akemaz
+  - utter_role_veeq
+  - utter_state_rewards
+  - utter_thank_you
+  - action_checkreward
+  - action_irritatedanimation
+  - action_happyanimation
+  - action_angryanimation
+  - action_suprisedanimation
+  - action_confusedanimation
+  - action_setkeyword
+
+forms:
+ - check_reward
