@@ -1,9 +1,0 @@
-action_endpoint:
-  url: 'http://localhost:5055/webhook'
-tracker_strore:
-  store_type: mongodb
-  url: mongodb://FelixDN:FrDgwG6L6CV1n2jw@rasatrackerstore-shard-00-00-tlus9.mongodb.net:27017,rasatrackerstore-shard-00-01-tlus9.mongodb.net:27017,rasatrackerstore-shard-00-02-tlus9.mongodb.net:27017/test?ssl=true&replicaSet=RasaTrackerStore-shard-0&authSource=admin&retryWrites=true
-  db: Rasa
-  username: FelixDN
-  password: FrDgwG6L6CV1n2jw
-  collection: conversations

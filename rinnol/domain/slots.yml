@@ -1,0 +1,10 @@
+name:
+  type: text
+reward:
+  type: unfeaturized
+  auto_fill: false 
+freedom:
+  type: unfeaturized
+  auto_fill: false
+requested_slot:
+  type: unfeaturized
