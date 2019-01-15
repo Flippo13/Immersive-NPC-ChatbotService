@@ -1,0 +1,1064 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello there"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello my friend"
+      },
+      {
+        "intent": "greet",
+        "text": "Good day to you"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey, how are you?"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello there, friend"
+      },
+      {
+        "intent": "greet",
+        "text": "Sup?"
+      },
+      {
+        "intent": "greet",
+        "text": "How's your boring life?"
+      },
+      {
+        "intent": "greet",
+        "text": "Oh hello"
+      },
+      {
+        "intent": "greet",
+        "text": "Oh hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "hello cunt"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there idiot"
+      },
+      {
+        "intent": "greet",
+        "text": "hello asshole"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey there dickhead"
+      },
+      {
+        "intent": "ask_name",
+        "text": "Who are you?"
+      },
+      {
+        "intent": "ask_name",
+        "text": "What is your name?"
+      },
+      {
+        "intent": "ask_name",
+        "text": "Can I ask your name?"
+      },
+      {
+        "intent": "ask_name",
+        "text": "Tell me your name."
+      },
+      {
+        "intent": "force_help",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "Veeq",
+            "entity": "name"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "We have Veeq, We know about the info. The best thing you can do now is to give up and help us retrieve it."
+      },
+      {
+        "intent": "force_help",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "Veeq",
+            "entity": "name"
+          }
+        ],
+        "text": "We have caught Veeq. Give up and get us that info if you want to live."
+      },
+      {
+        "intent": "force_help",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "Veeq",
+            "entity": "name"
+          },
+          {
+            "start": 35,
+            "end": 39,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "We have captured Veeq. We know the info is in his head. If you want to life you need to get it out."
+      },
+      {
+        "intent": "force_help",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Veeq",
+            "entity": "name"
+          },
+          {
+            "start": 49,
+            "end": 53,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "Veeq is in our possesion. We need you to get the info."
+      },
+      {
+        "intent": "force_help",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Veeq",
+            "entity": "name"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "Veeq is captured. Help us get the info or die in this prison."
+      },
+      {
+        "intent": "force_help",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "Veeq",
+            "entity": "name"
+          }
+        ],
+        "text": "We have Veeq."
+      },
+      {
+        "intent": "force_help",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "Veeq",
+            "entity": "name"
+          }
+        ],
+        "text": "We captured Veeq."
+      },
+      {
+        "intent": "force_help",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Veeq",
+            "entity": "name"
+          }
+        ],
+        "text": "Veeq is captured."
+      },
+      {
+        "intent": "force_help",
+        "entities": [
+          {
+            "start": 26,
+            "end": 30,
+            "value": "Veeq",
+            "entity": "name"
+          }
+        ],
+        "text": "The game is over. We have Veeq."
+      },
+      {
+        "intent": "positive",
+        "text": "yes"
+      },
+      {
+        "intent": "positive",
+        "text": "right"
+      },
+      {
+        "intent": "positive",
+        "text": "affirmative"
+      },
+      {
+        "intent": "positive",
+        "text": "yes to that"
+      },
+      {
+        "intent": "positive",
+        "text": "correct"
+      },
+      {
+        "intent": "positive",
+        "text": "yep"
+      },
+      {
+        "intent": "positive",
+        "text": "yes sir"
+      },
+      {
+        "intent": "positive",
+        "text": "si"
+      },
+      {
+        "intent": "positive",
+        "text": "correcto"
+      },
+      {
+        "intent": "positive",
+        "text": "ok"
+      },
+      {
+        "intent": "positive",
+        "text": "right"
+      },
+      {
+        "intent": "positive",
+        "text": "alright"
+      },
+      {
+        "intent": "positive",
+        "text": "i want that"
+      },
+      {
+        "intent": "positive",
+        "text": "i desire that"
+      },
+      {
+        "intent": "positive",
+        "text": "i agree"
+      },
+      {
+        "intent": "positive",
+        "text": "i want that"
+      },
+      {
+        "intent": "positive",
+        "text": "that is fine"
+      },
+      {
+        "intent": "positive",
+        "text": "that is correct"
+      },
+      {
+        "intent": "positive",
+        "text": "that is what i want"
+      },
+      {
+        "intent": "positive",
+        "text": "you understood me"
+      },
+      {
+        "intent": "positive",
+        "text": "that is right"
+      },
+      {
+        "intent": "positive",
+        "text": "that is what i mean"
+      },
+      {
+        "intent": "positive",
+        "text": "want that"
+      },
+      {
+        "intent": "positive",
+        "text": "im ok with that"
+      },
+      {
+        "intent": "positive",
+        "text": "ok its good"
+      },
+      {
+        "intent": "positive",
+        "text": "im good with that"
+      },
+      {
+        "intent": "positive",
+        "text": "ok its fine"
+      },
+      {
+        "intent": "positive",
+        "text": "is good"
+      },
+      {
+        "intent": "positive",
+        "text": "it is fine"
+      },
+      {
+        "intent": "positive",
+        "text": "im ok with this"
+      },
+      {
+        "intent": "positive",
+        "text": "im good with this"
+      },
+      {
+        "intent": "negative",
+        "text": "no"
+      },
+      {
+        "intent": "negative",
+        "text": "nope"
+      },
+      {
+        "intent": "negative",
+        "text": "negative"
+      },
+      {
+        "intent": "negative",
+        "text": "not correct"
+      },
+      {
+        "intent": "negative",
+        "text": "incorrect"
+      },
+      {
+        "intent": "negative",
+        "text": "no sir"
+      },
+      {
+        "intent": "negative",
+        "text": "wrong"
+      },
+      {
+        "intent": "negative",
+        "text": "dont want that"
+      },
+      {
+        "intent": "negative",
+        "text": "dont desire that"
+      },
+      {
+        "intent": "negative",
+        "text": "dont agree on that"
+      },
+      {
+        "intent": "negative",
+        "text": "didnt meant that"
+      },
+      {
+        "intent": "negative",
+        "text": "dont mean that"
+      },
+      {
+        "intent": "negative",
+        "text": "not what i want"
+      },
+      {
+        "intent": "negative",
+        "text": "not correct"
+      },
+      {
+        "intent": "negative",
+        "text": "wrong"
+      },
+      {
+        "intent": "negative",
+        "text": "bad"
+      },
+      {
+        "intent": "negative",
+        "text": "incorrect"
+      },
+      {
+        "intent": "negative",
+        "text": "im not ok with that"
+      },
+      {
+        "intent": "negative",
+        "text": "not good"
+      },
+      {
+        "intent": "negative",
+        "text": "its bad"
+      },
+      {
+        "intent": "negative",
+        "text": "that is bad"
+      },
+      {
+        "intent": "negative",
+        "text": "that is wrong"
+      },
+      {
+        "intent": "negative",
+        "text": "im not good with that"
+      },
+      {
+        "intent": "negative",
+        "text": "ok its not fine"
+      },
+      {
+        "intent": "negative",
+        "text": "definitely no"
+      },
+      {
+        "intent": "negative",
+        "text": "not good for me"
+      },
+      {
+        "intent": "negative",
+        "text": "its not ok"
+      },
+      {
+        "intent": "negative",
+        "text": "its not correct"
+      },
+      {
+        "intent": "confirm",
+        "text": "Good now come with me."
+      },
+      {
+        "intent": "confirm",
+        "text": "That is what I like to hear."
+      },
+      {
+        "intent": "confirm",
+        "text": "Sound good, lets go."
+      },
+      {
+        "intent": "confirm",
+        "text": "Come with me"
+      },
+      {
+        "intent": "confirm",
+        "text": "Dont try any tricks now."
+      },
+      {
+        "intent": "confirm",
+        "text": "Come quietly."
+      },
+      {
+        "intent": "confirm",
+        "text": "Follow me."
+      },
+      {
+        "intent": "ask_information_raih",
+        "text": "Can you tell me something about the company Raih?"
+      },
+      {
+        "intent": "ask_information_raih",
+        "text": "What is the company Raih's deal?"
+      },
+      {
+        "intent": "ask_information_raih",
+        "text": "What does the company Raih do?"
+      },
+      {
+        "intent": "ask_information_raih",
+        "text": "Do you know anything about the company Raih?"
+      },
+      {
+        "intent": "ask_information_raihkru",
+        "text": "Can you tell me something about the Raihkru?"
+      },
+      {
+        "intent": "ask_information_raihkru",
+        "text": "Who are the Raihkru?"
+      },
+      {
+        "intent": "ask_information_raihkru",
+        "text": "What is Raihkru doing on this space station?"
+      },
+      {
+        "intent": "ask_information_raihkru",
+        "text": "Do you know anything about the Raihkru?"
+      },
+      {
+        "intent": "ask_information_species",
+        "text": "Who lives on this space station?"
+      },
+      {
+        "intent": "ask_information_species",
+        "text": "What species live here?"
+      },
+      {
+        "intent": "ask_information_species",
+        "text": "What species live on this space station?"
+      },
+      {
+        "intent": "ask_information_species",
+        "text": "Do you know anything about the species on this space station?"
+      },
+      {
+        "intent": "ask_location_veeq",
+        "text": "Where is Veeq?"
+      },
+      {
+        "intent": "ask_location_veeq",
+        "text": "Have you seen Veeq?"
+      },
+      {
+        "intent": "ask_location_veeq",
+        "text": "Do you know where Veeq is?"
+      },
+      {
+        "intent": "ask_location_veeq",
+        "text": "When is the last time that you've seen Veeq?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "text": "What does he look like?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "text": "What does Veeq look like?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "text": "How can I recognise Veeq?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "text": "Is there anything special about his appearance?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "text": "Is there anything special about Veeq's appearance?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "text": "What does he look like?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "Veeq",
+            "entity": "name"
+          }
+        ],
+        "text": "What does Veeq look like?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "Veeq",
+            "entity": "name"
+          }
+        ],
+        "text": "How can I recognise Veeq?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "text": "Is there anything special about his appearance?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "entities": [
+          {
+            "start": 32,
+            "end": 36,
+            "value": "Veeq",
+            "entity": "name"
+          }
+        ],
+        "text": "Is there anything special about Veeq 's appearance?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "text": "What does he look like?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "Veeq",
+            "entity": "name"
+          }
+        ],
+        "text": "What race is Veeq"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "text": "What race is he?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "text": "What does he look like?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "text": "Oke, can you tell me what he looks like? What alienrace is he?"
+      },
+      {
+        "intent": "ask_role_veeq",
+        "text": "What is Veeq's role in the team?"
+      },
+      {
+        "intent": "ask_role_veeq",
+        "text": "What did Veeq do?"
+      },
+      {
+        "intent": "ask_role_veeq",
+        "text": "What was Veeq's job?"
+      },
+      {
+        "intent": "ask_role_veeq",
+        "text": "What was Veeq's part of the plan?"
+      },
+      {
+        "intent": "ask_role_veeq",
+        "text": "What was Veeq's role?"
+      },
+      {
+        "intent": "ask_role_veeq",
+        "text": "What was Veeq's job in the team?"
+      },
+      {
+        "intent": "ask_role",
+        "text": "What is your role in the team?"
+      },
+      {
+        "intent": "ask_role",
+        "text": "What is your job in the team?"
+      },
+      {
+        "intent": "ask_role",
+        "text": "What did you do?"
+      },
+      {
+        "intent": "ask_role",
+        "text": "What was your part of the plan?"
+      },
+      {
+        "intent": "ask_role",
+        "text": "What was your job?"
+      },
+      {
+        "intent": "ask_role",
+        "text": "What was your role?"
+      },
+      {
+        "intent": "ask_role_rinnol",
+        "text": "What is Rinnol's role in the team?"
+      },
+      {
+        "intent": "ask_role_rinnol",
+        "text": "What did Rinnol do?"
+      },
+      {
+        "intent": "ask_role_rinnol",
+        "text": "What was Rinnol job?"
+      },
+      {
+        "intent": "ask_role_rinnol",
+        "text": "What was Rinnol's part of the plan?"
+      },
+      {
+        "intent": "ask_role_rinnol",
+        "text": "What was Rinnol's role?"
+      },
+      {
+        "intent": "ask_role_rinnol",
+        "text": "What was Rinnol's job in the team?"
+      },
+      {
+        "intent": "ask_veeq_personality",
+        "text": "What is Veeq like?"
+      },
+      {
+        "intent": "ask_veeq_personality",
+        "text": "Do you know Veeq personally?"
+      },
+      {
+        "intent": "ask_veeq_personality",
+        "text": "How well do you know Veeq?"
+      },
+      {
+        "intent": "ask_veeq_personality",
+        "text": "What can you tell me about Veeq?"
+      },
+      {
+        "intent": "ask_information",
+        "text": "What is the info you stole about?"
+      },
+      {
+        "intent": "ask_information",
+        "text": "What info did you steal?"
+      },
+      {
+        "intent": "ask_information",
+        "text": "What did the info contain?"
+      },
+      {
+        "intent": "ask_information",
+        "text": "What was the info?"
+      },
+      {
+        "intent": "ask_info_location",
+        "entities": [
+          {
+            "start": 24,
+            "end": 28,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "Where did you stash the info?"
+      },
+      {
+        "intent": "ask_info_location",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "Where did you hide the info?"
+      },
+      {
+        "intent": "ask_info_location",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "The info, where is it?"
+      },
+      {
+        "intent": "ask_info_location",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "Where is the info now?"
+      },
+      {
+        "intent": "ask_info_location",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "Tell me where is the info is now!"
+      },
+      {
+        "intent": "ask_info_location",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "tell me where the info is hidden!"
+      },
+      {
+        "intent": "ask_info_location",
+        "entities": [
+          {
+            "start": 34,
+            "end": 38,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "tell me where you have hidden the info!"
+      },
+      {
+        "intent": "ask_info_location",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "the info, where is it now?"
+      },
+      {
+        "intent": "ask_info_location",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "info",
+            "entity": "information"
+          }
+        ],
+        "text": "the info was not with you when you were captured. Where is it?"
+      },
+      {
+        "intent": "ask_info_location",
+        "text": "Where is the information hidden?"
+      },
+      {
+        "intent": "ask_guess_info",
+        "text": "Is this the person who helped you?"
+      },
+      {
+        "intent": "ask_guess_info",
+        "text": "Is this Veeq?"
+      },
+      {
+        "intent": "ask_guess_info",
+        "text": "Is this the guy?"
+      },
+      {
+        "intent": "ask_guess_info",
+        "text": "Who is this?"
+      },
+      {
+        "intent": "ask_guess_info",
+        "text": "Is this his race?"
+      },
+      {
+        "intent": "ask_guess_info",
+        "text": "Is this his name?"
+      },
+      {
+        "intent": "ask_guess_info",
+        "text": "Is this his job?"
+      },
+      {
+        "intent": "ask_guess_info",
+        "text": "Which one of them is it?"
+      },
+      {
+        "intent": "ask_guess_info",
+        "text": "Can you help me?"
+      },
+      {
+        "intent": "ask_guess_info",
+        "text": "What is his name?"
+      },
+      {
+        "intent": "ask_guess_info",
+        "text": "What is his race?"
+      },
+      {
+        "intent": "ask_guess_info",
+        "text": "What does he do?"
+      },
+      {
+        "intent": "insult",
+        "text": "Fuck you"
+      },
+      {
+        "intent": "insult",
+        "text": "Fuck off"
+      },
+      {
+        "intent": "insult",
+        "text": "You're an idiot"
+      },
+      {
+        "intent": "insult",
+        "text": "Cunt"
+      },
+      {
+        "intent": "insult",
+        "text": "Screw you"
+      },
+      {
+        "intent": "insult",
+        "text": "Asshole"
+      },
+      {
+        "intent": "promise_freedom",
+        "text": "I will see what I can do"
+      },
+      {
+        "intent": "promise_freedom",
+        "entities": [
+          {
+            "start": 22,
+            "end": 25,
+            "value": "out",
+            "entity": "freedom"
+          }
+        ],
+        "text": "I will try to get you out"
+      },
+      {
+        "intent": "promise_freedom",
+        "entities": [
+          {
+            "start": 32,
+            "end": 35,
+            "value": "out",
+            "entity": "freedom"
+          }
+        ],
+        "text": "I promise I will try to get you out"
+      },
+      {
+        "intent": "promise_freedom",
+        "entities": [
+          {
+            "start": 29,
+            "end": 32,
+            "value": "out",
+            "entity": "freedom"
+          }
+        ],
+        "text": "I will do my best to get you out"
+      },
+      {
+        "intent": "promise_freedom",
+        "entities": [
+          {
+            "start": 34,
+            "end": 37,
+            "value": "out",
+            "entity": "freedom"
+          }
+        ],
+        "text": "Oke, if you help me I can get you out"
+      },
+      {
+        "intent": "promise_freedom",
+        "entities": [
+          {
+            "start": 76,
+            "end": 79,
+            "value": "out",
+            "entity": "freedom"
+          }
+        ],
+        "text": "If you can help me, I might be able to cut a deal with the Raih and get you out. But only if you help me"
+      },
+      {
+        "intent": "compliment",
+        "text": "You're very smart"
+      },
+      {
+        "intent": "compliment",
+        "text": "You're a good guy"
+      },
+      {
+        "intent": "compliment",
+        "text": "You're handsome"
+      },
+      {
+        "intent": "compliment",
+        "text": "You did well"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "good bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "stop"
+      },
+      {
+        "intent": "goodbye",
+        "text": "end"
+      },
+      {
+        "intent": "goodbye",
+        "text": "farewell"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "have a good one"
+      },
+      {
+        "intent": "goodbye",
+        "text": "That was all, goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Those are all my questions. goodbye"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": [
+      {
+        "value": "info",
+        "synonyms": [
+          "information",
+          "intel",
+          "goods",
+          "text",
+          "data"
+        ]
+      }
+    ]
+  }
+}

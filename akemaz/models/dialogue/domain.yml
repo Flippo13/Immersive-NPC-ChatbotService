@@ -1,0 +1,239 @@
+%YAML 1.1
+---
+actions:
+- utter_appearance_veeq
+- utter_compliment
+- utter_default
+- utter_denying
+- utter_giving_in
+- utter_greet
+- utter_help
+- utter_information
+- utter_information_raih
+- utter_information_raihkru
+- utter_information_species
+- utter_insult
+- utter_location_veeq
+- utter_mood
+- utter_name
+- utter_play_dump
+- utter_role
+- utter_role_rinnol
+- utter_ultimatum
+- action_checkreward
+- action_nameveeq
+- action_happyanimation
+- action_angryanimation
+- action_suprisedanimation
+- action_confusedanimation
+- action_setkeyword
+config:
+  store_entities_as_slots: true
+entities:
+- name
+- reward
+- freedom
+- thread
+forms:
+- check_reward
+intents:
+- greet:
+    use_entities: true
+- positive:
+    use_entities: true
+- negative:
+    use_entities: true
+- ask_name:
+    use_entities: true
+- ask_name_veeq:
+    use_entities: true
+- ask_location_veeq:
+    use_entities: true
+- ask_appearance_veeq:
+    use_entities: true
+- ask_motive:
+    use_entities: true
+- ask_motive_akemaz:
+    use_entities: true
+- ask_motive_veeq:
+    use_entities: true
+- ask_role:
+    use_entities: true
+- ask_role_veeq:
+    use_entities: true
+- ask_role_akemaz:
+    use_entities: true
+- ask_personality_akemaz:
+    use_entities: true
+- ask_personality_veeq:
+    use_entities: true
+- insult:
+    use_entities: true
+- compliment:
+    use_entities: true
+- ask_backstory:
+    use_entities: true
+- ask_info:
+    use_entities: true
+- ask_info_location:
+    use_entities: true
+- ask_mole:
+    use_entities: true
+- ask_mood:
+    use_entities: true
+- ask_reward:
+    use_entities: true
+- ask_help:
+    use_entities: true
+- confirm_help:
+    use_entities: true
+- promise_freedom:
+    use_entities: true
+- promise_money:
+    use_entities: true
+- ask_check_reward:
+    use_entities: true
+- comply_to_request:
+    use_entities: true
+- force_help:
+    use_entities: true
+- force_help+ask_mole:
+    use_entities: true
+- promise_money+promise_freedom:
+    use_entities: true
+- ask_information_raih:
+    use_entities: true
+- ask_information_raihkru:
+    use_entities: true
+- ask_information_species:
+    use_entities: true
+- ask_role_rinnol:
+    use_entities: true
+- ask_information:
+    use_entities: true
+- ask_veeq_personality:
+    use_entities: true
+- ask_guess_info:
+    use_entities: true
+- confirm:
+    use_entities: true
+- check_reward:
+    use_entities: false
+- goodbye:
+    use_entities: true
+slots:
+  freedom:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  requested_slot:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  reward:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+templates:
+  utter_appearance_veeq:
+  - text: I dont know who you are talking about
+  - text: I dont know who that is
+  utter_compliment:
+  - text: I know.
+  - text: Ofcourse I am!
+  utter_default:
+  - text: I am sorry, I dont know what that means. Got any other questions?
+  utter_denying:
+  - text: Not true
+  - text: It's a lie
+  - text: Can't be
+  utter_giving_in:
+  - text: Oke oke, damn I thought Veeq could pull it off. Well nothing I can do about
+      it now. Don't really feel like dieing you know. Promise me I will stay alive
+      if I help and I will get you that information.
+  - text: Alright, I give up. With Veeq caught I got no more leverage. Promise me
+      that I will stay alive if I help, only I can get that information.
+  utter_greet:
+  - text: Hey
+  - text: Oh, it's you
+  - text: Now, what?
+  - text: Keep it short, please
+  utter_help:
+  - text: Alright, I choose to trust you with my life. You are more thrustworty than
+      these Raihkru here. Take me to Veeq
+  utter_information:
+  - text: The information is stored in the poor guys head. But dont worry I can get
+      it out. Just promise me that I will walk out of here alive.
+  utter_information_raih:
+  - text: Raih is one of the biggest tech companies in the universe. They were one
+      of the first who starting building stations near destructive celestial bodies,
+      like neutron stars and black holes.
+  - text: Using tech like a Dyson Sphere, Raih was able to build many stations across
+      the universe, mostly trading outposts. This made them well known, rich, and
+      powerful.
+  - text: The company is controlled and owned by one species of alien, known as the
+      Raihkru.
+  - text: Raih build this space station. Rai'gnavis 9 is a home to numerous amount
+      of species, including Raihkru and Airkru. It has been a functional station for
+      around 10 years now.
+  utter_information_raihkru:
+  - text: The station is led by one alien race, the Raihkru. They are the most powerful.
+      There are multiple other races harmoniously living on the station, however,
+      there are two races that are seen as the minority.
+  - text: "The company 'Raih' is controlled and owned by one species of alien, known\
+      \ as the Raihkru. They are bigger than most alien species, stronger, and are\
+      \ often seen as intimidating by other species. "
+  - text: If Raihkru wants something, they go for it and they let nothing stand in
+      their way. This mentality helped the company to reach the position where they
+      are now and it helped them keep up with rival companies, including their main
+      rival, Mazulor, a tech corporation from the other side of the universe.
+  - text: Raihkru's culture is based on a 'kill-the-weak' system and they don’t believe
+      in any gods or supernatural deities.
+  utter_information_species:
+  - text: Raihkru, Airkru, Grifori and some smaller species live here. If you count
+      Rinnol and me too now then there are Istrali and Zirezakines that live here
+      too.
+  utter_insult:
+  - text: Fuck you, go away
+  - text: Excuse you?
+  - text: Shut your mouth.
+  - text: I'm going to pretend that I didn't hear that.
+  utter_location_veeq:
+  - text: I dont know
+  - text: No idea
+  utter_mood:
+  - text: Dont pretent to care. Does not work on me. Just go do your job
+  utter_name:
+  - text: My name is Akemaz
+  - text: Akemaz
+  - text: They call me Akemaz
+  - text: Akemaz, one of the Zirezakines
+  utter_play_dump:
+  - text: I dont know
+  - text: I have no idea what you are talking about
+  - text: No idea
+  - text: Not telling you anything
+  - text: I am not saying anything
+  - text: There is nothing you can do to make me tell you anything
+  - text: I am telling you
+  - text: Isnt there anything better you can do? I heard some important information
+      was stolen. Should you not be looking for that?
+  - text: Should you not be looking for that stolen data, it seems important
+  - text: You bore me
+  utter_role:
+  - text: I'm the most important one. I came up with the plan. I hid the information.
+      All of this wouldn't have happened without me.
+  utter_role_rinnol:
+  - text: He's the nerd.
+  - text: He hacked the system.
+  - text: He retrieved the information.
+  - text: He's smart, but not as smart as me.
+  utter_ultimatum:
+  - text: Pretty sure they really want that information. Dont think they will be happy
+      hearing you cant get it for them
+  - text: Without me there is no way you get info. You got no choice, do you really
+      think they will let you walk out alive if you dont get it?

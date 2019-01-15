@@ -1,0 +1,174 @@
+
+
+intents:
+ - greet
+ - positive
+ - negative
+ - ask_name
+ - ask_name_veeq
+ - ask_location_veeq
+ - ask_appearance_veeq
+ - ask_motive
+ - ask_motive_akemaz
+ - ask_motive_veeq
+ - ask_role
+ - ask_role_veeq
+ - ask_role_akemaz
+ - ask_personality_akemaz
+ - ask_personality_veeq
+ - insult
+ - compliment
+ - ask_backstory
+ - ask_info
+ - ask_info_location
+ - ask_mole
+ - ask_mood
+ - ask_reward
+ - ask_help
+ - confirm_help
+ - promise_freedom
+ - promise_money
+ - ask_check_reward
+ - comply_to_request
+ - force_help
+ - force_help+ask_mole
+ - promise_money+promise_freedom
+ - ask_information_raih
+ - ask_information_raihkru
+ - ask_information_species
+ - ask_role_rinnol
+ - ask_information
+ - ask_veeq_personality
+ - ask_guess_info
+ - confirm
+ - check_reward:
+    use_entities: false
+ - goodbye
+
+entities:
+ - name
+ - reward
+ - freedom
+ - thread
+
+slots:
+ name:
+   type: text
+ reward:
+   type: unfeaturized
+   auto_fill: false 
+ freedom:
+   type: unfeaturized
+   auto_fill: false
+ requested_slot:
+   type: unfeaturized
+
+templates:
+ utter_appearance_veeq:
+ - "I dont know who you are talking about"
+ - "I dont know who that is"
+
+ utter_compliment:
+ - "I know."
+ - "Ofcourse I am!"
+ utter_default:
+ - "I am sorry, I dont know what that means. Got any other questions?"
+ utter_denying:
+ - "Not true"
+ - "It's a lie"
+ - "Can't be"
+ utter_giving_in:
+ - "Oke oke, damn I thought Veeq could pull it off. Well nothing I can do about it now. Don't really feel like dieing you know. Promise me I will stay alive if I help and I will get you that information."
+ - "Alright, I give up. With Veeq caught I got no more leverage. Promise me that I will stay alive if I help, only I can get that information."
+
+ utter_greet:
+ - "Hey"
+ - "Oh, it's you"
+ - "Now, what?"
+ - "Keep it short, please"
+ utter_help:
+ - "Alright, I choose to trust you with my life. You are more thrustworty than these Raihkru here. Take me to Veeq"
+ utter_information:
+ - "The information is stored in the poor guys head. But dont worry I can get it out. Just promise me that I will walk out of here alive."
+ utter_information_raih:
+ - "Raih is one of the biggest tech companies in the universe. They were one of the first who starting building stations near destructive celestial bodies, like neutron stars and black holes."
+ - "Using tech like a Dyson Sphere, Raih was able to build many stations across the universe, mostly trading outposts. This made them well known, rich, and powerful."
+ - "The company is controlled and owned by one species of alien, known as the Raihkru."
+ - "Raih build this space station. Rai'gnavis 9 is a home to numerous amount of species, including Raihkru and Airkru. It has been a functional station for around 10 years now."
+ utter_information_raihkru:
+ - "The station is led by one alien race, the Raihkru. They are the most powerful. There are multiple other races harmoniously living on the station, however, there are two races that are seen as the minority."
+ - "The company 'Raih' is controlled and owned by one species of alien, known as the Raihkru. They are bigger than most alien species, stronger, and are often seen as intimidating by other species. "
+ - "If Raihkru wants something, they go for it and they let nothing stand in their way. This mentality helped the company to reach the position where they are now and it helped them keep up with rival companies, including their main rival, Mazulor, a tech corporation from the other side of the universe."
+ - "Raihkru's culture is based on a 'kill-the-weak' system and they don’t believe in any gods or supernatural deities."
+
+ utter_information_species:
+ - "Raihkru, Airkru, Grifori and some smaller species live here. If you count Rinnol and me too now then there are Istrali and Zirezakines that live here too."
+
+ utter_insult:
+ - "Fuck you, go away"
+ - "Excuse you?"
+ - "Shut your mouth."
+ - "I'm going to pretend that I didn't hear that."
+ utter_location_veeq:
+ - "I dont know"
+ - "No idea"
+ utter_mood:
+ - "Dont pretent to care. Does not work on me. Just go do your job"
+ utter_name:
+ - "My name is Akemaz"
+ - "Akemaz"
+ - "They call me Akemaz"
+ - "Akemaz, one of the Zirezakines"
+ utter_play_dump:
+ - "I dont know"
+ - "I have no idea what you are talking about"
+ - "No idea"
+ - "Not telling you anything"
+ - "I am not saying anything"
+ - "There is nothing you can do to make me tell you anything"
+ - "I am telling you"
+ - "Isnt there anything better you can do? I heard some important information was stolen. Should you not be looking for that?"
+ - "Should you not be looking for that stolen data, it seems important"
+ - "You bore me"
+
+ utter_role:
+ - "I'm the most important one. I came up with the plan. I hid the information. All of this wouldn't have happened without me."
+ utter_role_rinnol:
+ - "He's the nerd."
+ - "He hacked the system."
+ - "He retrieved the information."
+ - "He's smart, but not as smart as me."
+ utter_ultimatum:
+ - "Pretty sure they really want that information. Dont think they will be happy hearing you cant get it for them"
+ - "Without me there is no way you get info. You got no choice, do you really think they will let you walk out alive if you dont get it?"
+
+actions:
+  - utter_appearance_veeq
+  - utter_compliment
+  - utter_default
+  - utter_denying
+  - utter_giving_in
+  - utter_greet
+  - utter_help
+  - utter_information
+  - utter_information_raih
+  - utter_information_raihkru
+  - utter_information_species
+  - utter_insult
+  - utter_location_veeq
+  - utter_mood
+  - utter_name
+  - utter_play_dump
+  - utter_role
+  - utter_role_rinnol
+  - utter_ultimatum
+  - action_checkreward
+  - action_nameveeq
+  - action_happyanimation
+  - action_angryanimation
+  - action_suprisedanimation
+  - action_confusedanimation
+  - action_setkeyword
+
+forms:
+ - check_reward
