@@ -1,0 +1,17 @@
+## download rasa_core
+pip install rasa_core
+
+## download rasa nlu
+pip install rasa_nlu
+
+## download rasa_core.sdk
+pip install rasa_core_sdk
+
+
+## run action server
+
+python -m rasa_core_sdk.endpoint --actions actions
+
+
+## run chatbot
+python -m rasa_core.run -d models/dialogue -u models/current/nlu --port 5005 --credentials credentials.yml --endpoints endpoints.yml  
