@@ -2664,3 +2664,314 @@ There is an active form 'action_checkreward'
 Predicted next action using policy_0_KerasPolicy
 Predicted next action 'action_listen' with prob 1.00.
 Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/current/nlu\intent_classifier_tensorflow_embedding.ckpt
+D:\Users\Felix\Anaconda3\envs\Rasa_NLU\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Server initialized for gevent.
+Rasa Core server is up and running on http://localhost:5005
+33f4bee6b4134155a703f15241bdf5e1: Sending packet OPEN data {'sid': '33f4bee6b4134155a703f15241bdf5e1', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+33f4bee6b4134155a703f15241bdf5e1: Sending packet MESSAGE data 0
+33f4bee6b4134155a703f15241bdf5e1: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Hey"
+  }
+]
+received event "user_uttered" from 33f4bee6b4134155a703f15241bdf5e1 [/]
+emitting event "bot_uttered" to 33f4bee6b4134155a703f15241bdf5e1 [/]
+33f4bee6b4134155a703f15241bdf5e1: Sending packet MESSAGE data 2["bot_uttered",{"text":"I gave the data stick containing the info to Akemaz"}]
+33f4bee6b4134155a703f15241bdf5e1: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Who are you?"
+  }
+]
+received event "user_uttered" from 33f4bee6b4134155a703f15241bdf5e1 [/]
+Failed to run custom action 'action_checkreward'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_checkreward'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+emitting event "bot_uttered" to 33f4bee6b4134155a703f15241bdf5e1 [/]
+33f4bee6b4134155a703f15241bdf5e1: Sending packet MESSAGE data 2["bot_uttered",{"text":"I need you to promise me that you can get me out if I help you"}]
+33f4bee6b4134155a703f15241bdf5e1: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Hey"
+  }
+]
+received event "user_uttered" from 33f4bee6b4134155a703f15241bdf5e1 [/]
+emitting event "bot_uttered" to 33f4bee6b4134155a703f15241bdf5e1 [/]
+33f4bee6b4134155a703f15241bdf5e1: Sending packet MESSAGE data 2["bot_uttered",{"text":"I need you to promise me that you can get me out if I help you"}]
+33f4bee6b4134155a703f15241bdf5e1: Received packet PING data None
+33f4bee6b4134155a703f15241bdf5e1: Sending packet PONG data None
+33f4bee6b4134155a703f15241bdf5e1: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "I promise to get you out"
+  }
+]
+received event "user_uttered" from 33f4bee6b4134155a703f15241bdf5e1 [/]
+emitting event "bot_uttered" to 33f4bee6b4134155a703f15241bdf5e1 [/]
+33f4bee6b4134155a703f15241bdf5e1: Sending packet MESSAGE data 2["bot_uttered",{"text":"I gave the data stick containing the info to Akemaz"}]
+33f4bee6b4134155a703f15241bdf5e1: Received packet PING data None
+33f4bee6b4134155a703f15241bdf5e1: Sending packet PONG data None
+33f4bee6b4134155a703f15241bdf5e1: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "who is the mole?"
+  }
+]
+received event "user_uttered" from 33f4bee6b4134155a703f15241bdf5e1 [/]
+Failed to run custom action 'action_checkreward'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'action_checkreward'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+emitting event "bot_uttered" to 33f4bee6b4134155a703f15241bdf5e1 [/]
+33f4bee6b4134155a703f15241bdf5e1: Sending packet MESSAGE data 2["bot_uttered",{"text":"I need you to promise me that you can get me out if I help you"}]
+33f4bee6b4134155a703f15241bdf5e1: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "I will get you out"
+  }
+]
+received event "user_uttered" from 33f4bee6b4134155a703f15241bdf5e1 [/]
+emitting event "bot_uttered" to 33f4bee6b4134155a703f15241bdf5e1 [/]
+33f4bee6b4134155a703f15241bdf5e1: Sending packet MESSAGE data 2["bot_uttered",{"text":"I need you to promise me that you can get me out if I help you"}]
+33f4bee6b4134155a703f15241bdf5e1: Received packet PING data None
+33f4bee6b4134155a703f15241bdf5e1: Sending packet PONG data None
+33f4bee6b4134155a703f15241bdf5e1: Received packet MESSAGE data 1
+33f4bee6b4134155a703f15241bdf5e1: Received packet CLOSE data None
+Rasa process starting
+Restoring parameters from models/current/nlu\intent_classifier_tensorflow_embedding.ckpt
+D:\Users\Felix\Anaconda3\envs\Rasa_NLU\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Server initialized for gevent.
+Rasa Core server is up and running on http://localhost:5005
+42cb291e36fc477f89a63a726a16d8d4: Sending packet OPEN data {'sid': '42cb291e36fc477f89a63a726a16d8d4', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+42cb291e36fc477f89a63a726a16d8d4: Sending packet MESSAGE data 0
+42cb291e36fc477f89a63a726a16d8d4: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Hey"
+  }
+]
+received event "user_uttered" from 42cb291e36fc477f89a63a726a16d8d4 [/]
+emitting event "bot_uttered" to 42cb291e36fc477f89a63a726a16d8d4 [/]
+42cb291e36fc477f89a63a726a16d8d4: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hello"}]
+42cb291e36fc477f89a63a726a16d8d4: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Who are you?"
+  }
+]
+received event "user_uttered" from 42cb291e36fc477f89a63a726a16d8d4 [/]
+emitting event "bot_uttered" to 42cb291e36fc477f89a63a726a16d8d4 [/]
+42cb291e36fc477f89a63a726a16d8d4: Sending packet MESSAGE data 2["bot_uttered",{"text":"My name is Rinnol"}]
+42cb291e36fc477f89a63a726a16d8d4: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Where is the data?"
+  }
+]
+received event "user_uttered" from 42cb291e36fc477f89a63a726a16d8d4 [/]
+emitting event "bot_uttered" to 42cb291e36fc477f89a63a726a16d8d4 [/]
+42cb291e36fc477f89a63a726a16d8d4: Sending packet MESSAGE data 2["bot_uttered",{"text":"I don't know. I gave it to Akemaz. I'm guessing he hid it somewhere"}]
+42cb291e36fc477f89a63a726a16d8d4: Received packet PING data None
+42cb291e36fc477f89a63a726a16d8d4: Sending packet PONG data None
+42cb291e36fc477f89a63a726a16d8d4: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Who are you?"
+  }
+]
+received event "user_uttered" from 42cb291e36fc477f89a63a726a16d8d4 [/]
+emitting event "bot_uttered" to 42cb291e36fc477f89a63a726a16d8d4 [/]
+42cb291e36fc477f89a63a726a16d8d4: Sending packet MESSAGE data 2["bot_uttered",{"text":"My name is Rinnol"}]
+42cb291e36fc477f89a63a726a16d8d4: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Tell me about yourself"
+  }
+]
+received event "user_uttered" from 42cb291e36fc477f89a63a726a16d8d4 [/]
+emitting event "bot_uttered" to 42cb291e36fc477f89a63a726a16d8d4 [/]
+42cb291e36fc477f89a63a726a16d8d4: Sending packet MESSAGE data 2["bot_uttered",{"text":"I come from nowhere. What does it matter anyway?"}]
+42cb291e36fc477f89a63a726a16d8d4: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "tell me more"
+  }
+]
+received event "user_uttered" from 42cb291e36fc477f89a63a726a16d8d4 [/]
+emitting event "bot_uttered" to 42cb291e36fc477f89a63a726a16d8d4 [/]
+42cb291e36fc477f89a63a726a16d8d4: Sending packet MESSAGE data 2["bot_uttered",{"text":"Not true"}]
+42cb291e36fc477f89a63a726a16d8d4: Received packet PING data None
+42cb291e36fc477f89a63a726a16d8d4: Sending packet PONG data None
+42cb291e36fc477f89a63a726a16d8d4: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Where is the mole?"
+  }
+]
+received event "user_uttered" from 42cb291e36fc477f89a63a726a16d8d4 [/]
+emitting event "bot_uttered" to 42cb291e36fc477f89a63a726a16d8d4 [/]
+42cb291e36fc477f89a63a726a16d8d4: Sending packet MESSAGE data 2["bot_uttered",{"text":"I don't know. I gave it to Akemaz. I'm guessing he hid it somewhere"}]
+42cb291e36fc477f89a63a726a16d8d4: Received packet PING data None
+42cb291e36fc477f89a63a726a16d8d4: Sending packet PONG data None
+42cb291e36fc477f89a63a726a16d8d4: Received packet CLOSE data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet OPEN data {'sid': '6f89b3a7e7a7467f8952b7c2e16f8c18', 'upgrades': [], 'pingTimeout': 60000, 'pingInterval': 25000}
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 0
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "What does the mole look like?"
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"Who are you talking about? "}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "the mole"
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"I need you to promise me that you can get me out if I help you"}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet PING data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet PONG data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet PING data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet PONG data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "No I am not going to help you, answer my questions"
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"Alright, I will answer your questions. Calm down"}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet PING data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet PONG data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "What is the name of the mole?"
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"Pretty sure that Veeq is his name"}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet PING data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet PONG data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "What does he look like?"
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"He's half Airkru and half cyborg"}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "What was his role?"
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"Veeq is good with tools. He managed to get us in unnoticed via the docks"}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet PING data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet PONG data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Hey"
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hey"}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Who are you?"
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"Its Rinnol"}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet PING data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet PONG data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Where is the info?"
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"I don't know. I gave it to Akemaz. I'm guessing he hid it somewhere"}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Tell me about yourself"
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"I come from nowhere. What does it matter anyway?"}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Tell me "
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"That is wrong"}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet PING data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet PONG data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Who is the mole?"
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"I need you to promise me that you can get me out if I help you"}]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"Alright, I will answer your questions. Calm down"}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet PING data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet PONG data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet PING data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet PONG data None
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 2[
+  "user_uttered",
+  {
+    "message": "Where is Veeq?"
+  }
+]
+received event "user_uttered" from 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+emitting event "bot_uttered" to 6f89b3a7e7a7467f8952b7c2e16f8c18 [/]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Sending packet MESSAGE data 2["bot_uttered",{"text":"I don't know. I gave it to Akemaz. I'm guessing he hid it somewhere"}]
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet MESSAGE data 1
+6f89b3a7e7a7467f8952b7c2e16f8c18: Received packet CLOSE data None

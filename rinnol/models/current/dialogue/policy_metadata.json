@@ -3,10 +3,10 @@
     "action_listen": {
       "slots": []
     },
-    "action_checkreward": {
+    "check_reward": {
       "slots": [
-        "requested_slot",
-        "freedom"
+        "freedom",
+        "requested_slot"
       ]
     },
     "action_nameveeq": {
@@ -14,7 +14,39 @@
         "name"
       ]
     },
-    "action_restart": {
+    "utter_goodbye": {
+      "slots": []
+    },
+    "utter_negative": {
+      "slots": []
+    },
+    "action_deactivate_form": {
+      "slots": [
+        "requested_slot"
+      ]
+    },
+    "action_comply": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "action_roleveeq": {
+      "slots": []
+    },
+    "action_appearanceveeq": {
+      "slots": []
+    },
+    "utter_info": {
+      "slots": []
+    },
+    "utter_positive": {
+      "slots": []
+    },
+    "utter_info_location": {
+      "slots": []
+    },
+    "utter_name": {
       "slots": []
     }
   },
@@ -33,5 +65,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190114-120333"
+  "trained_at": "20190122-105305"
 }

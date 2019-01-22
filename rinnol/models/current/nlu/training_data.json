@@ -206,6 +206,38 @@
         "text": "What does he look like?"
       },
       {
+        "intent": "ask_appearance_veeq",
+        "text": "What does the mole look like?"
+      },
+      {
+        "intent": "ask_appearance_veeq",
+        "text": "and what does he look like?"
+      },
+      {
+        "intent": "ask_backstory",
+        "text": "Where are you from?"
+      },
+      {
+        "intent": "ask_backstory",
+        "text": "Tell me more about yourself"
+      },
+      {
+        "intent": "ask_backstory",
+        "text": "Can you tell me more about yourself?"
+      },
+      {
+        "intent": "ask_backstory",
+        "text": "What is your story?"
+      },
+      {
+        "intent": "ask_backstory",
+        "text": "So, where are you from?"
+      },
+      {
+        "intent": "ask_backstory",
+        "text": "What is your backstory?"
+      },
+      {
         "intent": "ask_help",
         "text": "Will you answer some of my questions?"
       },
@@ -220,6 +252,30 @@
       {
         "intent": "ask_help",
         "text": "Start answering now."
+      },
+      {
+        "intent": "ask_help",
+        "text": "You need to start answering."
+      },
+      {
+        "intent": "ask_help",
+        "text": "Can you please start answering my questions?"
+      },
+      {
+        "intent": "ask_help",
+        "text": "Start giving me answers."
+      },
+      {
+        "intent": "ask_help",
+        "text": "So what can you tell me?"
+      },
+      {
+        "intent": "ask_help",
+        "text": "Is there anything you can tell me?"
+      },
+      {
+        "intent": "ask_help",
+        "text": "It is better if you do answer my questions."
       },
       {
         "intent": "ask_info",
@@ -418,6 +474,10 @@
         "text": "Where is the information hidden?"
       },
       {
+        "intent": "ask_info_location",
+        "text": "Where is the stolen information?"
+      },
+      {
         "intent": "ask_mole",
         "text": "who is the mole?"
       },
@@ -450,6 +510,26 @@
         "text": "what is the name of the mole?"
       },
       {
+        "intent": "ask_mole",
+        "text": "Who is the mole?"
+      },
+      {
+        "intent": "ask_mole",
+        "text": "Who is the mole?"
+      },
+      {
+        "intent": "ask_mole",
+        "text": "Who is the mole?"
+      },
+      {
+        "intent": "ask_mole",
+        "text": "the mole"
+      },
+      {
+        "intent": "ask_mole",
+        "text": "What is the name of the mole?"
+      },
+      {
         "intent": "ask_mood",
         "text": "How are you doing?"
       },
@@ -472,6 +552,46 @@
       {
         "intent": "ask_motive",
         "text": "Why did you do it?"
+      },
+      {
+        "intent": "ask_motive",
+        "text": "Why did you commit the crime?"
+      },
+      {
+        "intent": "ask_motive",
+        "text": "For what reason did you it?"
+      },
+      {
+        "intent": "ask_motive",
+        "text": "What were you hoping to get out of it?"
+      },
+      {
+        "intent": "ask_motive",
+        "text": "What is your motive for commiting the crime?"
+      },
+      {
+        "intent": "ask_name",
+        "text": "What is your name?"
+      },
+      {
+        "intent": "ask_name",
+        "text": "Who are you?"
+      },
+      {
+        "intent": "ask_name",
+        "text": "Your name?"
+      },
+      {
+        "intent": "ask_name",
+        "text": "tell me who you are."
+      },
+      {
+        "intent": "ask_name",
+        "text": "What are you called?"
+      },
+      {
+        "intent": "ask_name",
+        "text": "Who is you?"
       },
       {
         "intent": "ask_role_veeq",
@@ -522,6 +642,18 @@
         "text": "What was his role?"
       },
       {
+        "intent": "ask_role_veeq",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "job",
+            "entity": "job"
+          }
+        ],
+        "text": "and what was his role?"
+      },
+      {
         "intent": "compliment",
         "text": "You're very smart"
       },
@@ -536,6 +668,30 @@
       {
         "intent": "compliment",
         "text": "You did well"
+      },
+      {
+        "intent": "elaborate",
+        "text": "Tell me more"
+      },
+      {
+        "intent": "elaborate",
+        "text": "Can you eleborate on that?"
+      },
+      {
+        "intent": "elaborate",
+        "text": "Go on"
+      },
+      {
+        "intent": "elaborate",
+        "text": "Can you talk more about that?"
+      },
+      {
+        "intent": "elaborate",
+        "text": "What else have you to say about that?"
+      },
+      {
+        "intent": "elaborate",
+        "text": "Is there more?"
       },
       {
         "intent": "force_help",
@@ -556,6 +712,14 @@
       {
         "intent": "force_help",
         "text": "No chance. start talking!"
+      },
+      {
+        "intent": "force_help",
+        "text": "No look at the position you are in, you better start answering my questions"
+      },
+      {
+        "intent": "force_help",
+        "text": "No look at the situation you are in. answer my questions!"
       },
       {
         "intent": "goodbye",
@@ -604,6 +768,10 @@
       {
         "intent": "goodbye",
         "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "That was all, goodbye"
       },
       {
         "intent": "greet",
@@ -818,6 +986,10 @@
         "text": "its not correct"
       },
       {
+        "intent": "negative",
+        "text": "no"
+      },
+      {
         "intent": "promise_freedom",
         "text": "I will see what I can do"
       },
@@ -892,11 +1064,43 @@
           }
         ],
         "text": "If you answer my question I will see if I can get you out"
+      },
+      {
+        "intent": "promise_freedom",
+        "entities": [
+          {
+            "start": 51,
+            "end": 54,
+            "value": "out",
+            "entity": "freedom"
+          }
+        ],
+        "text": "Alright, if you answer my questions I can bail you out"
+      },
+      {
+        "intent": "promise_freedom",
+        "entities": [
+          {
+            "start": 20,
+            "end": 23,
+            "value": "out",
+            "entity": "freedom"
+          }
+        ],
+        "text": "Sure, I can get you out"
       }
     ],
     "regex_features": [],
     "lookup_tables": [],
     "entity_synonyms": [
+      {
+        "value": "job",
+        "synonyms": [
+          "role",
+          "task",
+          "mission"
+        ]
+      },
       {
         "value": "info",
         "synonyms": [
@@ -905,14 +1109,6 @@
           "goods",
           "text",
           "data"
-        ]
-      },
-      {
-        "value": "job",
-        "synonyms": [
-          "role",
-          "task",
-          "mission"
         ]
       }
     ]

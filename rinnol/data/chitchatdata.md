@@ -43,13 +43,29 @@
 - What does he look like?
 - Oke, can you tell me what he looks like? What alienrace is he?
 - Good, what does he look like?
-- What does he look like? 
+- What does he look like?
+- What does the mole look like? 
+- and what does he look like? 
+
+## intent:ask_backstory
+- Where are you from?
+- Tell me more about yourself
+- Can you tell me more about yourself?
+- What is your story?
+- So, where are you from?
+- What is your backstory?
 
 ## intent:ask_help
 - Will you answer some of my questions?
 - Can you answer my questions now?
 - Now start helping me.
 - Start answering now.
+- You need to start answering.
+- Can you please start answering my questions?
+- Start giving me answers.
+- So what can you tell me? 
+- Is there anything you can tell me? 
+- It is better if you do answer my questions. 
 
 ## intent:ask_info
 - What is the [info](information) that you stole?
@@ -71,6 +87,7 @@
 - the [info](information), where is it now?
 - the [info](information) was not with you when you were captured. Where is it?
 - Where is the information hidden?
+- Where is the stolen information?
 
 ## intent:ask_mole
 - who is the mole?
@@ -79,8 +96,13 @@
 - who is the third person that was involved?
 - Who is the mole?
 - What is the name of the third person that helped you?
-- Who is the mole? 
-- what is the name of the mole? 
+- Who is the mole?
+- what is the name of the mole?
+- Who is the mole?
+- Who is the mole?
+- Who is the mole?
+- the mole
+- What is the name of the mole? 
 
 ## intent:ask_mood
 - How are you doing?
@@ -91,12 +113,25 @@
 
 ## intent:ask_motive
 - Why did you do it?
+- Why did you commit the crime?
+- For what reason did you it?
+- What were you hoping to get out of it?
+- What is your motive for commiting the crime?
+
+## intent:ask_name
+- What is your name?
+- Who are you?
+- Your name?
+- tell me who you are.
+- What are you called?
+- Who is you?
 
 ## intent:ask_role_veeq
 - What was his [role](job) in the crime?
 - What was his [role](job)?
 - And what was his [role](job)?
-- What was his [role](job)? 
+- What was his [role](job)?
+- and what was his [role](job:job)? 
 
 ## intent:compliment
 - You're very smart
@@ -104,12 +139,22 @@
 - You're handsome
 - You did well
 
+## intent:elaborate
+- Tell me more
+- Can you eleborate on that?
+- Go on
+- Can you talk more about that?
+- What else have you to say about that?
+- Is there more?
+
 ## intent:force_help
 - You are in no position to make any demands! Answer my questions!
 - Hell no! You better start answering my questions, or your life will get a whole lot worse!
 - No! You will answer my questions!
 - No way! you will obey me!
 - No chance. start talking!
+- No look at the position you are in, you better start answering my questions
+- No look at the situation you are in. answer my questions!
 
 ## intent:goodbye
 - bye
@@ -124,6 +169,7 @@
 - Those are all my questions. goodbye
 - That was all, goodbye
 - goodbye
+- That was all, goodbye
 
 ## intent:greet
 - hey
@@ -181,6 +227,7 @@
 - not good for me
 - its not ok
 - its not correct
+- no
 
 ## intent:promise_freedom
 - I will see what I can do
@@ -190,6 +237,8 @@
 - Oke, if you help me I can get you [out](freedom)
 - If you can help me, I might be able to cut a deal with the Raih and get you [out](freedom). But only if you help me
 - If you answer my question I will see if I can get you [out](freedom)
+- Alright, if you answer my questions I can bail you [out](freedom)
+- Sure, I can get you [out](freedom)
 
 ## synonym:info
 - information

@@ -4,6 +4,7 @@ intents:
  - greet
  - positive
  - negative
+ - elaborate
  - ask_name
  - ask_name_veeq
  - ask_location_veeq
@@ -188,8 +189,10 @@ actions:
   - utter_role_veeq
   - utter_state_rewards
   - utter_thank_you
-  - action_checkreward
+  - action_comply
   - action_nameveeq
+  - action_roleveeq
+  - action_appearanceveeq
   - action_happyanimation
   - action_angryanimation
   - action_suprisedanimation

@@ -30,8 +30,10 @@ actions:
 - utter_role_veeq
 - utter_state_rewards
 - utter_thank_you
-- action_checkreward
+- action_comply
 - action_nameveeq
+- action_roleveeq
+- action_appearanceveeq
 - action_happyanimation
 - action_angryanimation
 - action_suprisedanimation
@@ -43,6 +45,8 @@ entities:
 - name
 - reward
 - freedom
+- thread
+- job
 forms:
 - check_reward
 intents:
@@ -51,6 +55,8 @@ intents:
 - positive:
     use_entities: true
 - negative:
+    use_entities: true
+- elaborate:
     use_entities: true
 - ask_name:
     use_entities: true
@@ -181,8 +187,7 @@ templates:
   utter_motive:
   - text: I need the money. I... Please, it's not what you think. I don't care about
       being rich or powerful, not anymore. I just want to get away from it all
-  - text: I never meant to hurt anyone. I just want the money so that I can start
-      somewhere new
+  - text: I just want the money so that I can start somewhere new
   - text: I don't care about the politics, about Raih, or even about Akemaz or Veeq.
       I want to start a new life somewhere with the one I love, and I need money for
       that
@@ -236,7 +241,7 @@ templates:
   - text: Akemaz sees himself as our leader, which is accurate I guess.
   - text: Akemaz is the mastermind behind the whole plan. He's the one you want.
   utter_role_veeq:
-  - text: Veeq got us in to the station unnoticed, for the most part.
+  - text: Veeq is good with tools. He managed to get us in unnoticed via the docks
   utter_state_rewards:
   - text: I need you to promise me that you can get me out if I help you
   utter_thank_you:

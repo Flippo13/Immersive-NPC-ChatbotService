@@ -30,8 +30,10 @@ actions:
 - utter_role_veeq
 - utter_state_rewards
 - utter_thank_you
-- action_checkreward
+- action_comply
 - action_nameveeq
+- action_roleveeq
+- action_appearanceveeq
 - action_happyanimation
 - action_angryanimation
 - action_suprisedanimation
@@ -53,6 +55,8 @@ intents:
 - positive:
     use_entities: true
 - negative:
+    use_entities: true
+- elaborate:
     use_entities: true
 - ask_name:
     use_entities: true

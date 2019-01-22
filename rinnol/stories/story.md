@@ -1,164 +1,70 @@
-## happy path
-* ask_info_location
- - action_angryanimation
- - utter_info_location
+##happy path
 * ask_mole
- - action_angryanimation
- - action_checkreward
- - form{"name":"check_reward"}
- - form{"name":null}
- - utter_state_rewards
-* ask_mole
- - action_nameveeq
-
-## happy path
-* ask_info_location
- - action_angryanimation
- - utter_info_location
-* ask_mole
- - action_checkreward
- - form{"name":"check_reward"}
- - form{"name":null}
- - utter_state_rewards
-* force_help
- - utter_comply
-* ask_mole
- - action_nameveeq
-
-## happy path
-* ask_info_location
- - action_confusedanimation
- - utter_info_location
-* ask_mole
- - action_checkreward
- - form{"name":"check_reward"}
- - form{"name":null}
- - utter_state_rewards
-* force_help+ask_mole
- - action_nameveeq
- 
-## happy path
-* ask_mole
- - action_checkreward
- - form{"name":"check_reward"}
- - form{"name":null}
- - utter_state_rewards
-* promise_freedom{"freedom":"out"}
- - action_happyanimation
- - utter_thank_you
-* ask_mole
- - action_nameveeq
-
-## happy path
-* ask_mole
- - action_checkreward
- - form{"name":"check_reward"}
- - form{"name":null}
- - utter_state_rewards
-* force_help
- - action_suprisedanimation
- - utter_comply
-* ask_mole
- - action_nameveeq
-
-## Generated Story 2731415989214055349
-* ask_info_location
-    - action_confusedanimation
-    - utter_info_location
-* ask_mole
-    - action_checkreward
-    - form{"name": "action_checkreward"}
-    - slot{"requested_slot": "freedom"}
     - utter_state_rewards
-    - action_listen
-* form: promise_freedom{"freedom": "out"}
-    - action_checkreward
-    - slot{"freedom": "out"}
-    - form{"name": null}
-    - slot{"requested_slot": null}
-    - action_happyanimation
-    - utter_thank_you
-* ask_mole
-    - action_nameveeq
-    - slot{"name": "Veeq"}
-* ask_appearance_veeq{"name":"Veeq"}
-    - utter_appearance_veeq
-* ask_role_veeq{"name":"Veeq"}
-    - utter_role_veeq
-* goodbye
-    - utter_goodbye
-    - action_restart
-
-## Generated Story -2145418971661494439
-* greet
-    - action_angryanimation
-    - utter_greet
-* ask_mood
-    - action_angryanimation
-    - utter_mood
-* ask_motive
-    - action_confusedanimation
-    - utter_motive
+    - check_reward
+    - form{"name":"action_checkreward"}
+    - form{"name":null}
 * ask_help
-    - utter_request_reward
-    - action_checkreward
-    - form{"name": "action_checkreward"}
-    - slot{"requested_slot": "freedom"}
-* form: promise_freedom{"freedom": "out"}
-    - form: action_checkreward
-    - slot{"freedom": "out"}
-    - form{"name": null}
-    - slot{"requested_slot": null}
-    - utter_thank_you
-* ask_mole
-    - action_nameveeq
-    - slot{"name": "Veeq"}
-* ask_appearance_veeq{"name":"Veeq"}
-    - utter_appearance_veeq
-* ask_role_veeq{"name":"Veeq"}
-    - utter_role_veeq
-* goodbye
-    - utter_goodbye
-    - action_restart
-
+    - utter_positive
 
 ## greet
 * greet
-    - action_angryanimation
     - utter_greet
 
-## goodbye
-* goodbye
-    - action_angryanimation
-    - utter_goodbye
 
-## chitchat
-* ask_mood
-    - action_angryanimation
-    - utter_mood
-* ask_motive
-    - action_angryanimation
-    - utter_motive
-* ask_backstory
-    - action_angryanimation
-    - utter_backstory
+## ask info
+* ask_info
+    - utter_info
 
-## chitchat
-* ask_motive
-    - action_angryanimation
-    - utter_motive
+## ask info location
+* ask_info_location
+    - utter_info_location
+
+## ask name
+* ask_name
+    - utter_name
+
+## ask backstory
 * ask_backstory
     - utter_backstory
+* elaborate
+    - utter_negative
 
-## backstory
-* ask_backstory
-    - utter_backstory
-    
+## promise freedom
 
-## Generated Story 6575840438572499487
+* promise_freedom
+    - utter_thank_you
 * ask_mole
-    - utter_request_reward
-    - action_checkreward
+    - action_nameveeq
+* ask_role_veeq
+    - action_roleveeq
+* ask_appearance_veeq
+    - action_appearanceveeq
+
+## promise freedom
+
+* promise_freedom
+    - utter_thank_you
+* ask_mole
+    - action_nameveeq
+* ask_appearance_veeq
+    - action_appearanceveeq
+* ask_role_veeq
+    - action_roleveeq
+
+## ask role
+* ask_role_veeq
+    - action_roleveeq
+
+
+## ask appearance
+* ask_appearance_veeq
+    - action_appearanceveeq
+
+## Generated Story 5544121430277218876
+* ask_mole
+    - utter_state_rewards
+    - check_reward
     - form{"name": "action_checkreward"}
     - slot{"requested_slot": "freedom"}
 * form: promise_freedom{"freedom": "out"}
@@ -166,18 +72,110 @@
     - slot{"freedom": "out"}
     - form{"name": null}
     - slot{"requested_slot": null}
-    - action_checkreward
+
+## Generated Story 7392903516996215448
+* ask_mole
+    - utter_state_rewards
+    - check_reward
     - form{"name": "action_checkreward"}
+    - slot{"requested_slot": "freedom"}
+* force_help
+    - action_deactivate_form
     - form{"name": null}
     - slot{"requested_slot": null}
-    - utter_thank_you
+    - action_comply
+
+## Generated Story -8615622466873028937
+* ask_mole
+    - utter_state_rewards
+    - check_reward
+    - form{"name": "action_checkreward"}
+    - slot{"requested_slot": "freedom"}
+* force_help
+    - action_deactivate_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_comply
+
+## Generated Story -3575530110341386893
+* ask_appearance_veeq
+    - action_appearanceveeq
+* ask_mole
+    - utter_state_rewards
+    - check_reward
+    - form{"name": "check_reward"}
+    - slot{"requested_slot": "freedom"}
+* form: promise_freedom{"freedom": "out"}
+    - form: check_reward
+    - slot{"freedom": true}
+    - form{"name": null}
+    - slot{"requested_slot": null}
 * ask_mole
     - action_nameveeq
     - slot{"name": "Veeq"}
-* ask_role_veeq
-    - utter_role_veeq
 * ask_appearance_veeq
-    - utter_appearance_veeq
+    - action_appearanceveeq
+* ask_role_veeq{"job": "job"}
+    - action_roleveeq
+* goodbye
+    - utter_goodbye
+
+## Generated Story 5544121430277218876
+* ask_help
+    - utter_state_rewards
+    - check_reward
+    - form{"name": "action_checkreward"}
+    - slot{"requested_slot": "freedom"}
+* form: promise_freedom{"freedom": "out"}
+    - form: action_checkreward
+    - slot{"freedom": "out"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+
+## Generated Story 7392903516996215448
+* ask_help
+    - utter_state_rewards
+    - check_reward
+    - form{"name": "action_checkreward"}
+    - slot{"requested_slot": "freedom"}
+* force_help
+    - action_deactivate_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_comply
+
+## Generated Story -8615622466873028937
+* ask_help
+    - utter_state_rewards
+    - check_reward
+    - form{"name": "action_checkreward"}
+    - slot{"requested_slot": "freedom"}
+* force_help
+    - action_deactivate_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_comply
+
+## Generated Story -3575530110341386893
+* ask_appearance_veeq
+    - action_appearanceveeq
+* ask_help
+    - utter_state_rewards
+    - check_reward
+    - form{"name": "check_reward"}
+    - slot{"requested_slot": "freedom"}
+* form: promise_freedom{"freedom": "out"}
+    - form: check_reward
+    - slot{"freedom": true}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+* ask_mole
+    - action_nameveeq
+    - slot{"name": "Veeq"}
+* ask_appearance_veeq
+    - action_appearanceveeq
+* ask_role_veeq{"job": "job"}
+    - action_roleveeq
 * goodbye
     - utter_goodbye
 

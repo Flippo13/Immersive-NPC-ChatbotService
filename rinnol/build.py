@@ -56,7 +56,7 @@ def actions(outfile):
             p = ast.parse(str)
             classes = [node for node in ast.walk(p) if isinstance(node, ast.ClassDef)]
             for item in classes:
-                if (item.bases[0].id == "Action" or item.bases[0].id == "FormAction"):
+                if (item.bases[0].id == "Action"):
                     outfile.write("\n  - action_" + item.name.lower())
 
 

@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 class CheckReward(FormAction): 
 
     def name(self):
-        return "action_checkreward"
+        return "check_reward"
 
     @staticmethod
     def required_slots(tracker):
@@ -35,7 +35,7 @@ class CheckReward(FormAction):
         return { "freedom": [self.from_entity(entity="freedom",
                         intent=["promise_freedom","comply_to_request"]),
                         self.from_intent(intent='affirm', value=True),
-                        self.from_intent(intent="negative", value=True),
+                        self.from_intent(intent="negative", value=False),
                         self.from_entity(entity="thread", intent=["force_help"])]}
 
     @staticmethod
@@ -45,6 +45,8 @@ class CheckReward(FormAction):
     @staticmethod
     def threads_synonyms():
         return["demands", "no way", "no", "no chance"]
+
+        
     def validate(self,
                  dispatcher: CollectingDispatcher,
                  tracker: Tracker,
@@ -55,11 +57,14 @@ class CheckReward(FormAction):
         slot_values = self.extract_other_slots(dispatcher, tracker, domain)
 
         slot_to_fill = tracker.get_slot(REQUESTED_SLOT)
-        if slot_to_fill:
-            slot_values.update(self.extract_requested_slot(dispatcher,tracker,domain))
-            
-            if not slot_values:
 
+        if slot_to_fill:
+            slot_values.update(self.extract_requested_slot(dispatcher,
+                                                           tracker, domain))
+            if not slot_values:
+                # reject form action execution
+                # if some slot was requested but nothing was extracted
+                # it will allow other policies to predict another action
                 raise ActionExecutionRejection(self.name(),
                                                "Failed to validate slot {0} "
                                                "with action {1}"
@@ -68,19 +73,45 @@ class CheckReward(FormAction):
 
         for slot, value in slot_values.items():
             if slot == 'freedom':
-                if value.lower() not in self.freedom_synonyms():
-                    dispatcher.utter_template('utter_ask_freedom', tracker)
+                if isinstance(value,str):
+                    if value.lower() not in self.freedom_synonyms():
+                        dispatcher.utter_template('utter_request_rewards', tracker)
 
-                    slot_values[slot] = None
+                        slot_values[slot] = None
+
+                    elif value.lower() in self.threads_synonyms():
+                        
+
+                        slot_values[slot] = False
+
+                    elif value.lower() in self.freedom_synonyms():
+                       
+
+                        slot_values[slot] = True
+
 
         return [SlotSet(slot, value) for slot, value in slot_values.items()]
             
 
     def submit(self, dispatcher, tracker, domain):
-        
-        dispatcher.utter_template('utter_submit', tracker)
+        if (tracker.get_slot("freedom")) is True:
+            dispatcher.utter_template('utter_thank_you', tracker)
+        else:
+            dispatcher.utter_template('utter_comply', tracker)
+
         return[]
         
+
+class Comply(Action):
+
+    def name(self):
+        return "action_comply"
+
+    def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_template('utter_comply',tracker)
+
+        return[SlotSet("freedom","No Freedom")]
+
 
 class NameVeeq(Action):
 
@@ -88,12 +119,61 @@ class NameVeeq(Action):
         return "action_nameveeq"
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_template('utter_name_veeq',tracker)
+        
+        freedomSlot = tracker.get_slot("freedom")
 
+        if freedomSlot is not None:
+            
+            dispatcher.utter_template('utter_name_veeq',tracker)
 
-        return[SlotSet("name", "Veeq")]
+            return[SlotSet("name", "Veeq")]
+        
+        else:
+            
 
+            dispatcher.utter_template('utter_state_rewards',tracker)
+        
+            return[] 
 
+class RoleVeeq(Action):
+
+    def name(self):
+        return "action_roleveeq"
+
+    def run(self, dispatcher, tracker, domain):
+
+        nameSlot = tracker.get_slot("name")
+
+        if nameSlot is not None:
+            dispatcher.utter_template('utter_role_veeq',tracker)
+
+            return[]
+        
+        else: 
+
+            dispatcher.utter_template('utter_ask_who',tracker)
+
+        return[]
+
+class AppearanceVeeq(Action):
+
+    def name(self):
+        return "action_appearanceveeq"
+
+    def run(self, dispatcher, tracker, domain):
+
+        
+        nameSlot = tracker.get_slot("name")
+
+        if nameSlot is not None:
+            dispatcher.utter_template('utter_appearance_veeq',tracker)
+
+            return[]
+        
+        else: 
+
+            dispatcher.utter_template('utter_ask_who',tracker)
+            return[]
 
 class HappyAnimation(Action):
 
